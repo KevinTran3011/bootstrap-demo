@@ -21,7 +21,7 @@ const line_chart_1_data = {
 };
 
 const line_chart_1 = new Chart(ctx2, {
-  maintainAspectRatio: false,
+  // maintainAspectRatio: false,
   type: "line",
   data: line_chart_1_data,
   options: {
