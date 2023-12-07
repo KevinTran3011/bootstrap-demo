@@ -242,6 +242,7 @@
 .date_container {
   display: flex;
   height: 32px;
+
   padding: 0px 8px 0px 16px;
   align-items: center;
   gap: 4px;
@@ -402,6 +403,27 @@
 
 /* BOX I */
 
+.box-i-content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.box-i-date {
+  display: flex;
+  padding: 2px 8px;
+  align-items: center;
+  color: var(--light-theme-gray-pure-white, #fff);
+  border-radius: 4px;
+  background: var(--light-theme-primary-primary, #5d87ff);
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.14px;
+}
 .box_detail {
   display: flex;
   align-items: center;
@@ -448,6 +470,7 @@
 }
 
 .box_team_bootstrap {
+  font-weight: 600;
   border-radius: 4px;
   background: var(--light-theme-primary-light-primary, #ecf2ff);
   color: var(--light-theme-primary-primary, #5d87ff);
@@ -455,16 +478,56 @@
 }
 
 .box_team_react {
+  font-weight: 600;
   border-radius: 4px;
   background: var(--light-theme-action-light-light-success, #e6fffa);
   color: var(--light-theme-action-success, #13deb9);
   padding: 2px 8px;
 }
 .box_team_angular {
+  font-weight: 600;
   border-radius: 4px;
   background: var(--light-theme-action-light-light-error, #fbf2ef);
   color: var(--light-theme-action-error, #fa896b);
   padding: 2px 8px;
+}
+
+/* BOX K */
+
+.box-k-contents {
+  display: flex;
+  width: 297px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 21px;
+}
+
+.box-k-content {
+  display: flex;
+  width: 297px;
+  align-items: flex-start;
+  gap: 16px;
+  margin-right: 35px;
+}
+
+.box_k_timestamp {
+  width: 40px;
+  flex-shrink: 0;
+  color: var(--light-theme-gray-dark-blue-grey, #2a3547);
+
+  /* Normal */
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: -0.28px;
+}
+
+.box_k_dot {
+  width: 13px;
+  height: 13px;
 }
 
 @media only screen and (orientation: portrait) {
