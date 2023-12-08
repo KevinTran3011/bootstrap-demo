@@ -48,34 +48,56 @@
                 <div class="section_item">
                   <span class="material-icons"> shopping_bag </span>Chat
                 </div>
-                <div class="section_item" id="user">
-                  <span class="material-icons"> shopping_bag </span>User
+                <div
+                  class="user_section"
+                  style="display: flex; flex-direction: column"
+                >
+                  <div
+                    class="section_item"
+                    id="user"
+                    onclick="toggleUserDropdown()"
+                  >
+                    <span class="material-icons"> shopping_bag </span>User
 
-                  <span class="material-icons"> expand_more </span>
+                    <span class="material-icons" id="expanded_arrow">
+                      expand_more
+                    </span>
+                  </div>
+                  <div class="user_dropdown_container" id="userDropdown">
+                    <ul class="user_dropdown">
+                      <li><div class="dropdown_option">Social Profile</div></li>
+                      <li>
+                        <div class="dropdown_option" onclick="toggleProfile()">
+                          Profile<span
+                            ><img src="images/left_section/Down arrow.png"
+                          /></span>
+                        </div>
+                        <ul class="profile_list" id="profileList">
+                          <li>Profile 01</li>
+                          <li>Profile 02</li>
+                          <li>Profile 03</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div
+                          class="dropdown_option"
+                          id="card"
+                          onclick="toggleCards()"
+                        >
+                          Card<span
+                            ><img src="images/left_section/Down arrow.png"
+                          /></span>
+                        </div>
+                        <ul class="card_list" id="cardList">
+                          <li>Style 01</li>
+                          <li>Style 02</li>
+                          <li>Style 03</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
 
-                <ul class="user_dropdown">
-                  <li><div class="dropdown_option">Social Profile</div></li>
-                  <li>
-                    <div class="dropdown_option">
-                      Profile<span
-                        ><img src="images/left_section/Down arrow.png"
-                      /></span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="dropdown_option">
-                      Card<span
-                        ><img src="images/left_section/Down arrow.png"
-                      /></span>
-                    </div>
-                    <ul class="card_option">
-                      <li>Style 01</li>
-                      <li>Style 02</li>
-                      <li>Style 03</li>
-                    </ul>
-                  </li>
-                </ul>
                 <div class="section_item">
                   <span class="material-icons"> shopping_bag </span>Analytical
                 </div>
@@ -83,7 +105,9 @@
                   <span class="material-icons"> shopping_bag </span>eCommerce
                 </div>
                 <div class="section_item">
-                  <span class="material-icons"> shopping_bag </span>Disabled
+                  <div class="disabled_item">
+                    <span class="material-icons"> shopping_bag </span>Disabled
+                  </div>
                 </div>
               </div>
             </div>
@@ -95,13 +119,13 @@
                   <div class="section_item">
                     <span class="material-icons"> shopping_bag </span>Avatar
                   </div>
-                  <div class="coded-line">Coded</div>
+                  <div class="coded_icon">Coded</div>
                 </div>
-                <div class="outline-container">
+                <div class="outline_container">
                   <div class="section_item">
                     <span class="material-icons"> shopping_bag </span>Outline
                   </div>
-                  <div class="outline-line">Outline</div>
+                  <div class="outline_icon">Outline</div>
                 </div>
                 <div class="basic-container">
                   <div class="basic-text">

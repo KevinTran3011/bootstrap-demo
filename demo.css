@@ -14,7 +14,7 @@
   height: 100vh;
 }
 
-#user.clicked {
+div.clicked {
   border-radius: 6px;
   background: var(--light-theme-primary-primary, #5d87ff);
   color: var(--light-theme-gray-pure-white, #fff);
@@ -24,10 +24,6 @@
   font-weight: 600;
   line-height: 140%;
   letter-spacing: -0.14px;
-}
-
-.user_dropdown {
-  list-style: none;
 }
 
 .dropdown_option {
@@ -47,11 +43,6 @@
   letter-spacing: -0.28px;
 }
 
-.section_item .user_dropdown li ul {
-  justify-content: space-between;
-  position: relative;
-}
-
 .logo {
   color: var(--light-theme-gray-dark-blue-grey, #2a3547);
   font-family: Plus Jakarta Sans;
@@ -59,6 +50,45 @@
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 83.333% */
+}
+
+.user_dropdown_container {
+  display: none;
+}
+
+.profile_list {
+  display: none;
+}
+
+.card_list {
+  display: none;
+}
+
+.card_list li {
+  height: 40px;
+  align-self: stretch;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.14px;
+}
+
+.profile_list li {
+  height: 40px;
+  align-self: stretch;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: -0.14px;
+}
+#expanded_arrow.expanded {
+  transform: rotate(180deg);
 }
 
 .section_header {
@@ -94,6 +124,54 @@
   height: 24px;
 }
 
+.disabled_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  opacity: 0.5;
+}
+
+.avatar-container,
+.basic-container,
+.outline-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.coded_icon {
+  border-radius: 100px;
+  background: var(--light-theme-primary-primary, #5d87ff);
+  color: white;
+  display: flex;
+  height: 22px;
+  width: 70px;
+  padding: 0px 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.outline_icon {
+  border-radius: 100px;
+  background: none;
+  color: #5d87ff;
+  display: flex;
+  height: 22px;
+  width: 70px;
+  padding: 0px 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #5d87ff;
+}
 /* NAV BAR */
 
 .nav-bar {
@@ -348,7 +426,7 @@
   margin: 30px 16px 30px 15px;
 }
 
-.grid_onClick {
+div.grid_onClick {
   border: 1px solid var(--light-theme-primary-primary, #5d87ff);
   color: #5d87ff;
 }
