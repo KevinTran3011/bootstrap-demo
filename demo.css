@@ -6,12 +6,32 @@
 .side_bar {
   position: fixed;
   overflow: auto;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
 /* Additional style to ensure the sidebar is full height */
 .side_bar {
   height: 100vh;
+}
+
+.number_icon {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  padding: 0px 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--light-theme-primary-primary, #5d87ff);
+  color: var(--neutral-white, #fff);
+}
+
+.analytical_section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
 }
 
 div.clicked {
@@ -100,6 +120,7 @@ div.clicked {
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 16.8px */
+  padding: 15px;
 }
 
 .section_item {
@@ -171,6 +192,21 @@ div.clicked {
   justify-content: center;
   align-items: center;
   border: 0.5px solid #5d87ff;
+}
+
+.basic-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sign_up {
+  height: 126px;
+  flex-shrink: 0;
+  background-color: #5a6a85;
+  border-radius: 12px;
+  background: var(--light-theme-action-light-light-info, #ebf3fe);
+  margin-top: 30px;
 }
 /* NAV BAR */
 
@@ -376,9 +412,6 @@ div.clicked {
   line-height: 140%; /* 16.8px */
 }
 /* BOX E */
-/* .box-e {
-  height: 411px;
-} */
 
 .box-e-chart {
   width: 205px;
@@ -388,6 +421,48 @@ div.clicked {
   justify-content: center;
   align-self: center;
 }
+
+.doughnut_legend {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+  color: var(--light-theme-gray-medium-blue-grey, #7c8fac);
+
+  /* Small */
+  font-family: Plus Jakarta Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 16.8px */
+}
+.doughnut_legend_1,
+.doughnut_legend_2,
+.doughnut_legend_3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.doughnut_legend_1,
+.doughnut_legend_2,
+.doughnut_legend_3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.doughnut_legend_1 {
+  background-color: var(--light-theme-primary-primary, #5d87ff);
+}
+
+.doughnut_legend_2 {
+  background-color: var(--light-theme-secondary-secondary-color, #49beff);
+}
+
+.doughnut_legend_3 {
+  background-color: var(--light-theme-action-success, #13deb9);
+}
+
 /* BOX F */
 
 .box_icon {
