@@ -6,7 +6,6 @@
 .side_bar {
   position: fixed;
   overflow: auto;
-  /* padding: 15px; */
 }
 
 /* Additional style to ensure the sidebar is full height */
@@ -208,6 +207,31 @@ div.clicked {
   background: var(--light-theme-action-light-light-info, #ebf3fe);
   margin-top: 30px;
 }
+
+.sign_up-content {
+  /* display: flex; */
+  /* flex-direction: row; */
+  align-items: flex-start;
+  padding: 15px;
+  gap: 14px;
+}
+
+.item-1 {
+  color: var(--light-theme-gray-md-new-grey, #5a6a85);
+
+  /* Heading/H6 */
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+}
+
+.sign_up-image {
+  height: 124px;
+  transform: rotate(-7.452deg);
+  flex-shrink: 0;
+}
 /* NAV BAR */
 
 .nav-bar {
@@ -255,7 +279,7 @@ div.clicked {
   gap: 16px;
 }
 
-.check_button {
+.modified_button {
   display: flex;
   height: 36px;
   width: 76px;
@@ -413,6 +437,10 @@ div.clicked {
 }
 /* BOX E */
 
+.box-e {
+  height: 500px;
+}
+
 .box-e-chart {
   width: 205px;
   height: 205px;
@@ -486,6 +514,10 @@ div.clicked {
 .box_table {
   display: flex;
   flex-direction: column;
+}
+
+.material-symbols-outlined.gray {
+  color: var(--light-theme-gray-medium-blue-grey, #7c8fac);
 }
 .box_table_title {
   display: flex;
@@ -592,6 +624,24 @@ div.grid_onClick {
 
 .box-h {
   height: 456px;
+}
+
+.box_title .h {
+  font-size: 40px;
+}
+
+.box-h-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.box-h-mid {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 .box-h-chart {
   height: 300px;
