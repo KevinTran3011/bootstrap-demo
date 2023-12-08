@@ -14,6 +14,44 @@
   height: 100vh;
 }
 
+#user.clicked {
+  border-radius: 6px;
+  background: var(--light-theme-primary-primary, #5d87ff);
+  color: var(--light-theme-gray-pure-white, #fff);
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.14px;
+}
+
+.user_dropdown {
+  list-style: none;
+}
+
+.dropdown_option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  padding: 10px 12px 10px 12px;
+  color: var(--light-theme-gray-md-new-grey, #5a6a85);
+
+  /* Normal */
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: -0.28px;
+}
+
+.section_item .user_dropdown li ul {
+  justify-content: space-between;
+  position: relative;
+}
+
 .logo {
   color: var(--light-theme-gray-dark-blue-grey, #2a3547);
   font-family: Plus Jakarta Sans;
@@ -237,13 +275,14 @@
 .box_header {
   display: flex;
   flex-direction: row;
+  gap: 4px;
 }
 
 .date_container {
   display: flex;
   height: 32px;
-
   padding: 0px 8px 0px 16px;
+  margin-left: 30px;
   align-items: center;
   gap: 4px;
   border-radius: 3px;
@@ -259,9 +298,9 @@
   line-height: 140%; /* 16.8px */
 }
 /* BOX E */
-.box-e {
+/* .box-e {
   height: 411px;
-}
+} */
 
 .box-e-chart {
   width: 205px;
@@ -286,6 +325,7 @@
   align-items: center;
   gap: 12px;
   flex: 1 0 0;
+  justify-content: flex-start;
 }
 
 /* BOX G */
@@ -308,6 +348,10 @@
   margin: 30px 16px 30px 15px;
 }
 
+.grid_onClick {
+  border: 1px solid var(--light-theme-primary-primary, #5d87ff);
+  color: #5d87ff;
+}
 .box_grid_text {
   width: 80px;
   height: 80px;
@@ -392,6 +436,10 @@
 }
 
 /* BOX H I AND K */
+
+.box-h {
+  height: 456px;
+}
 .box-h-chart {
   height: 300px;
   width: 300px;
@@ -402,7 +450,9 @@
 }
 
 /* BOX I */
-
+.box-i {
+  height: 456px;
+}
 .box-i-content {
   display: inline-flex;
   flex-direction: column;
@@ -493,6 +543,10 @@
 }
 
 /* BOX K */
+
+.box-k {
+  height: 456px;
+}
 
 .box-k-contents {
   display: flex;
