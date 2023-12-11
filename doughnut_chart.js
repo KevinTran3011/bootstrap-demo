@@ -18,6 +18,7 @@ const inner_label = {
     ctx.fillStyle = "#2A3547";
     ctx.textAlign = "center";
     ctx.fontWeight = "600";
+    ctx.fontSize = "21px";
     ctx.fontColor = " var(--light-theme-gray-dark-blue-grey, #2A3547)";
     ctx.textBaseline = "middle";
     ctx.fillText("$500,458", Xcoor, Ycoor);

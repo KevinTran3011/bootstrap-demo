@@ -14,9 +14,15 @@ sectionItems.forEach((item) => {
 });
 
 // FUNCTION FOR GRID ON CLICK
-const gridSectionOnClick = () => {
+const gridSectionOnClick = (event) => {
   const gridSection = event.currentTarget;
   gridSection.classList.toggle("grid_onClick");
+
+  // Toggle text color within the clicked element
+  const textElement = gridSection.querySelector(".material-symbols-outlined");
+  const textElement2 = gridSection.querySelector(".box_grid_text_title");
+  textElement.classList.toggle("text_onClick");
+  textElement2.classList.toggle("text_onClick");
 };
 
 const gridItems = document.querySelectorAll(".box_grid_text");

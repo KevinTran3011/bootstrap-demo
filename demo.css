@@ -191,6 +191,7 @@ div.clicked {
   justify-content: center;
   align-items: center;
   border: 0.5px solid #5d87ff;
+  margin-top: 10px;
 }
 
 .basic-text {
@@ -209,16 +210,18 @@ div.clicked {
 }
 
 .sign_up-content {
-  /* display: flex; */
-  /* flex-direction: row; */
+  display: flex;
+  flex-direction: row;
   align-items: flex-start;
   padding: 15px;
-  gap: 14px;
 }
 
-.item-1 {
+.sign_up-item-1 {
+  width: 45px;
+  height: 55px;
   color: var(--light-theme-gray-md-new-grey, #5a6a85);
-
+  display: flex;
+  flex-wrap: wrap;
   /* Heading/H6 */
   font-family: Plus Jakarta Sans;
   font-size: 16px;
@@ -228,9 +231,9 @@ div.clicked {
 }
 
 .sign_up-image {
+  width: 80px;
   height: 124px;
   transform: rotate(-7.452deg);
-  flex-shrink: 0;
 }
 /* NAV BAR */
 
@@ -442,12 +445,21 @@ div.clicked {
 }
 
 .box-e-chart {
-  width: 205px;
-  height: 205px;
+  width: 280px;
+  height: 280px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-self: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.box-e .hr {
+  width: 362px;
+  height: 1px;
+  background: #eaeff4;
 }
 
 .doughnut_legend {
@@ -526,6 +538,7 @@ div.clicked {
   align-items: center;
   gap: 16px;
 }
+
 .box-g-middle {
   display: inline-flex;
   align-items: center;
@@ -535,8 +548,16 @@ div.clicked {
 
 div.grid_onClick {
   border: 1px solid var(--light-theme-primary-primary, #5d87ff);
+}
+
+div.grid_onClick .material-symbols-outlined.text_onClick {
   color: #5d87ff;
 }
+
+div.grid_onClick .box_grid_text_title.text_onClick {
+  color: var(--light-theme-primary-primary, #5d87ff);
+}
+
 .box_grid_text {
   width: 80px;
   height: 80px;
@@ -570,7 +591,6 @@ div.grid_onClick {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 16px;
 }
 
 .table_section_text {
