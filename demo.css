@@ -13,6 +13,25 @@
   height: 100vh;
 }
 
+.logo_title {
+  margin-left: 50px;
+}
+
+.logo_image-left {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+}
+
+.logo_image-right {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  z-index: 3;
+  mix-blend-mode: multiply;
+}
+
 .number_icon {
   display: flex;
   width: 22px;
@@ -510,7 +529,6 @@ div.clicked {
   padding: 8px;
   align-items: flex-start;
   border-radius: 8px;
-  background: var(--light-theme-primary-light-primary, #ecf2ff);
 }
 
 .box_left {
@@ -519,6 +537,40 @@ div.clicked {
   gap: 12px;
   flex: 1 0 0;
   justify-content: flex-start;
+}
+
+.box_icon_paypal,
+.box_icon_wallet,
+.box_icon_credit,
+.box_icon_bank,
+.box_icon_refund {
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
+  border-radius: 8px;
+}
+
+.box_icon_paypal {
+  background: var(--light-theme-primary-light-primary, #ecf2ff);
+}
+
+.box_icon_wallet {
+  background: var(--light-theme-action-light-light-success, #e6fffa);
+}
+
+.box_icon_credit {
+  background: var(--light-theme-action-light-light-warning, #fef5e5);
+}
+.box_icon_bank {
+  background: var(--light-theme-action-light-light-info, #ebf3fe);
+}
+
+.box_icon_refund {
+  background: var(--light-theme-action-light-light-error, #fbf2ef);
+}
+
+.wallet_image {
+  background: var(--light-theme-action-light-light-success, #e6fffa);
 }
 
 /* BOX G */
