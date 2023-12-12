@@ -1,0 +1,12 @@
+.box_header{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.box_h-header{
+    @extend .box_header;
+    align-items: center;
+    margin-bottom: 24px;
+
+}

@@ -1,0 +1,12 @@
+.date_container{
+    display: flex;
+    height: 32px;
+    padding: 0px 8px 0px 16px;
+    margin-left: 30px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 3px;
+    border: 1px solid var(--light-theme-gray-light-grey, #dfe5ef);
+    background: var(--light-theme-gray-pure-white, #fff);
+    color: var(--light-theme-gray-medium-blue-grey, #7c8fac);
+}

@@ -1,0 +1,25 @@
+@mixin text_icon($color, $background, $width){
+    display: flex;
+    height: 22px;
+    width: $width;
+    padding: 0px 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    color: $color;
+    background: $background;
+
+}
+
+.outline_icon{
+    @include text_icon(var(--neutral-white, #FFF), var(--light-theme-primary-primary, #5D87FF), 70px)
+}
+
+.coded_icon{
+    @include text_icon(var(--light-theme-primary-primary, #5D87FF), var(--neutral-white, #FFF), 70px)
+}
+
+.number_icon{
+    @include text_icon(var(--neutral-white, #FFF), var(--light-theme-primary-primary, #5D87FF), 22px)
+}

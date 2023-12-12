@@ -1,0 +1,14 @@
+.button{
+    display: flex;
+    height: 36px;
+    width: 76px;
+    padding: 0px 16px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+  
+    background: var(--light-theme-primary-primary, #5d87ff);
+    color: var(--light-theme-gray-pure-white, #fff);
+
+}
+

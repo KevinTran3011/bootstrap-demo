@@ -1,0 +1,17 @@
+@use 'abstract/fonts' as font;
+
+.section_item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    padding: 10px 12px 10px 12px;
+    color: var(--light-theme-gray-md-new-grey, #5a6a85);
+
+
+    }
+
+.disabled_item{
+    @extend .section_item;
+    opacity: 0.5;
+}
