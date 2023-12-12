@@ -125,6 +125,7 @@ div.clicked {
   line-height: 140%; /* 19.6px */
   letter-spacing: -0.14px;
 }
+
 #expanded_arrow.expanded {
   transform: rotate(180deg);
 }
