@@ -1,11 +1,20 @@
-@mixin text_icon($color, $background, $width){
+@mixin flex-center {
     display: flex;
+    align-items: center;
+  }
+
+@mixin flex-start{
+    display: flex;
+    align-items: flex-start;
+}
+
+@mixin text_icon($color, $background, $width){
+    @include flex-center;
     height: 22px;
     width: $width;
     padding: 0px 8px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     border-radius: 100px;
     color: $color;
     background: $background;
@@ -23,3 +32,4 @@
 .number_icon{
     @include text_icon(var(--neutral-white, #FFF), var(--light-theme-primary-primary, #5D87FF), 22px)
 }
+

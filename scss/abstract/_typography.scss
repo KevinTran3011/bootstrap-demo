@@ -1,0 +1,36 @@
+
+@use 'abstract/color' as c;
+
+$font-size: 14px !default;
+$font-family: Plus Jakarta Sans !default;
+$font-weight: 400 !default;
+$font-style: normal !default;
+$line-height : 140% !default;
+$letter-spacing: -0.14px !default;
+
+// COLOR
+
+
+.body{
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: c.$primary-color;
+}
+
+.box_title{
+    font-size: 18px;
+    line-height: 120%;
+    color: c.$title-color;
+    font-weight: 600;
+
+}
+
+.legend_text{
+    font-size: 12px;
+    line-height: 120%;
+    color: c.$medium-grey;
+}

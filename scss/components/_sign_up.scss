@@ -1,0 +1,28 @@
+
+@use 'abstract/mixin' as m;
+.sign_up-content {
+    @include m.flex_start;
+    flex-direction: row;
+
+    padding: 15px;
+  }
+  
+  .sign_up-item-1 {
+    width: 45px;
+    height: 55px;
+    color: var(--light-theme-gray-md-new-grey, #5a6a85);
+    display: flex;
+    flex-wrap: wrap;
+    /* Heading/H6 */
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+  }
+  
+  .sign_up-image {
+    width: 80px;
+    height: 124px;
+    transform: rotate(-7.452deg);
+  }

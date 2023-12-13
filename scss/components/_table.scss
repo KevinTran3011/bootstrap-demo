@@ -1,0 +1,7 @@
+@use 'abstract/mixin' as m;
+
+.table_section{
+    @include m.flex_center;
+    gap: 16px;
+    flex-direction: center;
+}

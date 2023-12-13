@@ -1,14 +1,16 @@
+
+@use 'abstract/mixin' as m;
+@use 'abstract/color' as c;
+
 .button{
-    display: flex;
+    @include m.flex_center;
     height: 36px;
     width: 76px;
     padding: 0px 16px;
-    align-items: center;
     gap: 4px;
     border-radius: 4px;
-  
-    background: var(--light-theme-primary-primary, #5d87ff);
-    color: var(--light-theme-gray-pure-white, #fff);
+    background: c.$blue;
+    color: c.$white;
 
 }
 

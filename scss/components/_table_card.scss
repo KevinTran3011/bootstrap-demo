@@ -1,0 +1,7 @@
+@use 'abstract/mixin' as m;
+
+.table-card{
+    @include m.flex_center;
+    gap: 12px;
+    flex: 1 0 0;
+}
