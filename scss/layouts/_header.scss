@@ -1,12 +1,10 @@
+
+@use 'abstract/mixin' as m;
+
 .box_header{
-    display: flex;
-    flex-direction: row;
+    @include m.flex_start;
+    flex-direction: column;
     gap: 4px;
+    flex: 1 0 0;
 }
 
-.box_h-header{
-    @extend .box_header;
-    align-items: center;
-    margin-bottom: 24px;
-
-}

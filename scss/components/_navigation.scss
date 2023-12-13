@@ -1,5 +1,9 @@
+@use 'abstract/mixin' as m;
+
 .nav-bar {
-    padding: 15px;
+  @include m.flex_center;
+  padding: 15px;
+  justify-content: flex-end;
     
   }
 .nav_bar_left img {

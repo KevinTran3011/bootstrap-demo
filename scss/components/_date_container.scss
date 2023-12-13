@@ -4,6 +4,7 @@
 
 .date_container{
     @include m.flex_center;
+    font-size: 12px;
     height: 32px;
     padding: 0px 8px 0px 16px;
     margin-left: 30px;
@@ -12,4 +13,11 @@
     border: 1px solid c.$light-grey;
     background: c.$white;
     color: c.$medium-grey;
+
+    &--blue{
+        background: c.$blue;
+        color: c.$white;
+        font-size: 14px;
+    }
 }
+

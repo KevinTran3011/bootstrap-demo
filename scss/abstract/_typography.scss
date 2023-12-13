@@ -29,8 +29,34 @@ $letter-spacing: -0.14px !default;
 
 }
 
+.number_title{
+    @extend .box_title;
+    font-size: 21px;
+}
+
+.logo{
+    color: c.$title-color;
+    font-size: 24px;
+    font-weight: 700;
+}
+
 .legend_text{
     font-size: 12px;
     line-height: 120%;
     color: c.$medium-grey;
 }
+
+.subtitle_text{
+    color: c.$medium-grey;
+}
+
+.small_subtitle{
+    @extend .subtitle_text;
+    font-size: 12px;
+}
+
+.grid_onClick{
+    color: c.$blue;
+    font-weight: 600;
+}
+

@@ -33,3 +33,11 @@
     @include text_icon(var(--neutral-white, #FFF), var(--light-theme-primary-primary, #5D87FF), 22px)
 }
 
+
+
+@mixin text_box($color, $background){
+    @include flex-center;
+    background-color: $background;
+    color: $color;
+
+}
