@@ -21,19 +21,12 @@
 
 }
 
-.outline_icon{
-    @include text_icon(var(--neutral-white, #FFF), var(--light-theme-primary-primary, #5D87FF), 70px)
+@mixin table_icon($color, $background){
+    @include flex-start;
+    padding: 8px;
+    background-color: $background;
+    border-radius: 8px;
 }
-
-.coded_icon{
-    @include text_icon(var(--light-theme-primary-primary, #5D87FF), var(--neutral-white, #FFF), 70px)
-}
-
-.number_icon{
-    @include text_icon(var(--neutral-white, #FFF), var(--light-theme-primary-primary, #5D87FF), 22px)
-}
-
-
 
 @mixin text_box($color, $background){
     @include flex-center;

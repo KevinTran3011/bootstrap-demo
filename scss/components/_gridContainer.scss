@@ -1,0 +1,19 @@
+
+@use 'abstract/mixin' as m;
+@use 'abstract/color' as c;
+
+.grid_container{
+
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    color: c.$medium-grey;
+    border: 1px solid c.$light-grey;
+    border-radius: 7px;
+
+
+}
+
+.grid_container .on_click{
+    color: $blue;
+}
