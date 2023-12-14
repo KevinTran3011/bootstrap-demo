@@ -1,4 +1,5 @@
 @use 'abstract/mixin' as *;
+@use 'abstract/color' as *;
 
 
 .outline_icon{
@@ -13,3 +14,21 @@
     @include text_icon(var(--neutral-white, #FFF), var(--light-theme-primary-primary, #5D87FF), 22px)
 }
 
+.table_icon--transparent_blue{
+    @include table_icon($transparent-blue)
+}
+
+.table_icon--green{
+    @include table_icon($light-green)
+}
+
+.table_icon--orange{
+    @include table_icon($light-orange)
+}
+
+.table_icon--blue{
+    @include table_icon($light-blue)
+}
+.table_icon--red{
+    @include table_icon($light-red)
+}
