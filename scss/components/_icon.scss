@@ -1,14 +1,15 @@
-@use 'abstract/mixin' as m;
+@use 'abstract/mixin' as *;
 
 
 .outline_icon{
-    @include m.text_icon(var(--neutral-white, #FFF), var(--light-theme-primary-primary, #5D87FF), 70px)
+    @include text_icon(var(--neutral-white, #FFF), var(--light-theme-primary-primary, #5D87FF), 70px)
 }
 
 .coded_icon{
-    @include m.text_icon(var(--light-theme-primary-primary, #5D87FF), var(--neutral-white, #FFF), 70px)
+    @include text_icon(var(--light-theme-primary-primary, #5D87FF), var(--neutral-white, #FFF), 70px)
 }
 
 .number_icon{
-    @include m.text_icon(var(--neutral-white, #FFF), var(--light-theme-primary-primary, #5D87FF), 22px)
+    @include text_icon(var(--neutral-white, #FFF), var(--light-theme-primary-primary, #5D87FF), 22px)
 }
+

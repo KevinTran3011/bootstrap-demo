@@ -1,22 +1,22 @@
-@use 'abstract/mixin' as m;
-@use 'abstract/color ' as c;
+@use 'abstract/mixin' as *;
+@use 'abstract/color ' as *;
 
 
 .date_container{
-    @include m.flex_center;
+    @include flex_center;
     font-size: 12px;
     height: 32px;
     padding: 0px 8px 0px 16px;
     margin-left: 30px;
     gap: 4px;
     border-radius: 3px;
-    border: 1px solid c.$light-grey;
-    background: c.$white;
-    color: c.$medium-grey;
+    border: 1px solid $light-grey;
+    background: $white;
+    color: $medium-grey;
 
     &--blue{
-        background: c.$blue;
-        color: c.$white;
+        background: $blue;
+        color: $white;
         font-size: 14px;
     }
 }

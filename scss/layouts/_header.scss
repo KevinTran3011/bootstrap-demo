@@ -1,8 +1,8 @@
 
-@use 'abstract/mixin' as m;
+@use 'abstract/mixin' as *;
 
 .box_header{
-    @include m.flex_start;
+    @include flex_start;
     flex-direction: column;
     gap: 4px;
     flex: 1 0 0;

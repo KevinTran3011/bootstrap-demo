@@ -1,8 +1,8 @@
-@use 'abstract/mixin' as m;
+@use 'abstract/mixin' as *;
 
 
 .section_item{
-    @include m.flex_center;
+    @include flex_center;
     padding: 16px 12px;
     align-self: stretch;
     gap: 16px;

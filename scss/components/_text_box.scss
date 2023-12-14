@@ -1,18 +1,18 @@
-@use 'abstract/mixin' as m;
-@use 'abstract/color' as c;
+@use 'abstract/mixin' as *;
+@use 'abstract/color' as *;
 
 
 .text_box--blue{
-   @include text_box(c.$blue, c.$light-blue)
+   @include text_box($blue, $light-blue)
 }
 
 .text_box--red{
-    @include text_box(c.$red, c.$light-red)
+    @include text_box($red, $light-red)
 }
 
 .text_box--green{
-    @include text_box(c.$green, c.$light-green)
+    @include text_box($green, $light-green)
 }
 .text_box--orange{
-    @include text_box(c.$orange, c.$light-orange)
+    @include text_box($orange, $light-orange)
 }

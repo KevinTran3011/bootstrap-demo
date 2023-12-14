@@ -1,9 +1,9 @@
 
-@use 'abstract/mixin' as m;
-@use 'abstract/color' as c;
+@use 'abstract/mixin' as * ;
+@use 'abstract/color' as * ;
 
 .button{
-    @include m.flex_center;
+    @include flex_center;
     height: 36px;
     width: 76px;
     padding: 0px 16px;

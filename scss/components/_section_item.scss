@@ -1,5 +1,5 @@
-@use 'abstract/fonts' as font;
-@use 'abstract/color' as c;
+@use 'abstract/fonts' as *;
+@use 'abstract/color' as *;
 
 .section_item{
     display: flex;

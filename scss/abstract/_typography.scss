@@ -1,5 +1,5 @@
 
-@use 'abstract/color' as c;
+@use 'abstract/color' as *;
 
 $font-size: 14px !default;
 $font-family: Plus Jakarta Sans !default;
@@ -24,7 +24,7 @@ $letter-spacing: -0.14px !default;
 .box_title{
     font-size: 18px;
     line-height: 120%;
-    color: c.$title-color;
+    color: $title-color;
     font-weight: 600;
 
 }
@@ -35,7 +35,7 @@ $letter-spacing: -0.14px !default;
 }
 
 .logo{
-    color: c.$title-color;
+    color: $title-color;
     font-size: 24px;
     font-weight: 700;
 }
@@ -43,11 +43,11 @@ $letter-spacing: -0.14px !default;
 .legend_text{
     font-size: 12px;
     line-height: 120%;
-    color: c.$medium-grey;
+    color: $medium-grey;
 }
 
 .subtitle_text{
-    color: c.$medium-grey;
+    color: $medium-grey;
 }
 
 .small_subtitle{
@@ -56,7 +56,7 @@ $letter-spacing: -0.14px !default;
 }
 
 .grid_onClick{
-    color: c.$blue;
+    color: $blue;
     font-weight: 600;
 }
 

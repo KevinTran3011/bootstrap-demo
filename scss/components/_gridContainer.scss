@@ -1,14 +1,14 @@
 
-@use 'abstract/mixin' as m;
-@use 'abstract/color' as c;
+@use 'abstract/mixin' as *;
+@use 'abstract/color' as *;
 
 .grid_container{
 
     width: 80px;
     height: 80px;
     flex-shrink: 0;
-    color: c.$medium-grey;
-    border: 1px solid c.$light-grey;
+    color: $medium-grey;
+    border: 1px solid $light-grey;
     border-radius: 7px;
 
 
