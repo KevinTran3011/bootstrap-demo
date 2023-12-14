@@ -1,25 +1,22 @@
-@use '../abstract/mixin' as *;
-@use '../abstract/typography' as *;
+@use "../abstract/mixin" as *;
+@use "../abstract/typography" as *;
 
-.box_table{
-    @include flex_start;
-    flex-direction: column;
-    gap: 14px;
+.box_table {
+  @include flex_start;
+  flex-direction: column;
+  gap: 14px;
 
-    .table_section{
-        @include flex_center;
-        gap: 16px;
-    
-        &--title{
-            @include flex-center;
-        }
-    
-        &--content{
-            @include flex_center;
-            flex-shrink: 0;
-    
-        }
+  .table_section {
+    @include flex_center;
+    gap: 16px;
 
+    &--title {
+      @include flex-center;
     }
-}
 
+    &--content {
+      @include flex_center;
+      flex-shrink: 0;
+    }
+  }
+}

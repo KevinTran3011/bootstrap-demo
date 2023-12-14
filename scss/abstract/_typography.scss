@@ -1,66 +1,63 @@
-@use '../abstract/color.scss' as *;
+@use "../abstract/color.scss" as *;
 
 $font-size: 14px !default;
 $font-family: Plus Jakarta Sans !default;
 $font-weight: 400 !default;
 $font-style: normal !default;
-$line-height : 140% !default;
+$line-height: 140% !default;
 $letter-spacing: -0.14px !default;
 
 // COLOR
 
-
 .body {
-    font-family: $font-family; 
-    font-size: $font-size;
-    font-weight: $font-weight;
-    font-style: $font-style;
-    line-height: $line-height;
-    letter-spacing: $letter-spacing;
-    color: $primary-color; 
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $primary-color;
 }
 
-.box_title{
-    font-size: 18px;
-    line-height: 120%;
-    color: $title-color;
-    font-weight: 600;
-
+.box_title {
+  font-size: 18px;
+  line-height: 120%;
+  color: $title-color;
+  font-weight: 600;
 }
 
-.number_title{
-    @extend .box_title;
-    font-size: 21px;
+.number_title {
+  @extend .box_title;
+  font-size: 21px;
 }
 
-.logo_title{
-    color: $title-color;
-    font-size: 24px;
-    font-weight: 700;
+.logo_title {
+  color: $title-color;
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.legend_text{
-    font-size: 12px;
-    line-height: 120%;
-    color: $medium-grey;
+.legend_text {
+  font-size: 12px;
+  line-height: 120%;
+  color: $medium-grey;
 }
 
-.subtitle_text{
-    color: $medium-grey;
+.subtitle_text {
+  color: $medium-grey;
 }
 
-.subtitle_text--bold{
-    @extend .subtitle_text;
-    font-weight: 600;
+.subtitle_text--bold {
+  @extend .subtitle_text;
+  font-weight: 600;
 }
 
-.small_subtitle{
-    @extend .subtitle_text;
-    font-size: 12px;
+.small_subtitle {
+  @extend .subtitle_text;
+  font-size: 12px;
 }
 
-.grid_onClick{
-    color: $blue;
-    font-weight: 600;
+.grid_onClick {
+  color: $blue;
+  font-weight: 600;
 }
-

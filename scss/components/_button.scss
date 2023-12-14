@@ -1,16 +1,13 @@
+@use "../abstract/mixin" as *;
+@use "../abstract/color" as *;
 
-@use '../abstract/mixin' as * ;
-@use '../abstract/color' as * ;
-
-.button{
-    @include flex_center;
-    height: 36px;
-    width: 76px;
-    padding: 0px 16px;
-    gap: 4px;
-    border-radius: 4px;
-    background:$blue;
-    color: $white;
-
+.button {
+  @include flex_center;
+  height: 36px;
+  width: 76px;
+  padding: 0px 16px;
+  gap: 4px;
+  border-radius: 4px;
+  background: $blue;
+  color: $white;
 }
-

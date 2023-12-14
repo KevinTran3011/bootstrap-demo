@@ -1,14 +1,13 @@
-@use '../abstract/mixin' as *;
+@use "../abstract/mixin" as *;
 
 .nav-bar {
   @include flex_center;
   padding: 15px;
   justify-content: flex-end;
-    
-  }
+}
 .nav_bar_left img {
   margin-right: 24px;
 }
 .nav_bar_right img {
-  margin-right: 24px; 
+  margin-right: 24px;
 }

@@ -1,37 +1,33 @@
-@use '../abstract/mixin' as *;
-@use '../abstract/color' as *;
+@use "../abstract/mixin" as *;
+@use "../abstract/color" as *;
 
-
-.text_box--blue{
-   @include text_box($blue, $light-blue)
+.text_box--blue {
+  @include text_box($blue, $light-blue);
 }
 
-
-.text_box--red{
-    @include text_box($red, $light-red)
+.text_box--red {
+  @include text_box($red, $light-red);
 }
 
-.text_box--green{
-    @include text_box($green, $light-green)
+.text_box--green {
+  @include text_box($green, $light-green);
 }
-.text_box--orange{
-    @include text_box($orange, $light-orange)
+.text_box--orange {
+  @include text_box($orange, $light-orange);
 }
 
-.text_box--white{
-    @include text_box($blue, $white);
-    padding: 2px 8px;
+.text_box--white {
+  @include text_box($blue, $white);
+  padding: 2px 8px;
 
-    & ::after{
-        content: "";
-        position: absolute;
-        width: 4;
-        height: 8;
-        border-left: 6px transparent solid;
-        border-top: 6px solid #fff;
-        border-right: 6px transparent solid;
-        margin-top: 25px;
-
-    }
-
+  & ::after {
+    content: "";
+    position: absolute;
+    width: 4;
+    height: 8;
+    border-left: 6px transparent solid;
+    border-top: 6px solid #fff;
+    border-right: 6px transparent solid;
+    margin-top: 25px;
+  }
 }

@@ -1,0 +1,13 @@
+.logo_image {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  &--left {
+    z-index: 1;
+  }
+  &--right {
+    z-index: 3;
+    mix-blend-mode: multiply;
+  }
+}

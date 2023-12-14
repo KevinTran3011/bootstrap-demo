@@ -1,10 +1,8 @@
+@use "../abstract/mixin" as *;
 
-@use '../abstract/mixin' as *;
-
-.box_header{
-    @include flex_start;
-    flex-direction: column;
-    gap: 4px;
-    flex: 1 0 0;
+.box_header {
+  @include flex_start;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1 0 0;
 }
-

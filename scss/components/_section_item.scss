@@ -1,17 +1,15 @@
-@use '../abstract/typography' as *;
-@use '../abstract/color.scss' as *;
-@use '../abstract/mixin' as *;
-.section_item{
-    @include flex_center;
-    gap: 8px;
-    flex: 1 0 0;
-    padding: 10px 12px 10px 12px;
-    border-radius: 4px;
+@use "../abstract/typography" as *;
+@use "../abstract/color.scss" as *;
+@use "../abstract/mixin" as *;
+.section_item {
+  @include flex_center;
+  gap: 8px;
+  flex: 1 0 0;
+  padding: 10px 12px 10px 12px;
+  border-radius: 4px;
+}
 
-
-    }
-
-.disabled_item{
-    @extend .section_item;
-    opacity: 0.5;
+.disabled_item {
+  @extend .section_item;
+  opacity: 0.5;
 }

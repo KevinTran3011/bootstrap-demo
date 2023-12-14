@@ -1,37 +1,35 @@
 @mixin flex-center {
-    display: flex;
-    align-items: center;
-  }
-
-@mixin flex-start{
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: center;
 }
 
-@mixin text_icon($color, $background, $width){
-    @include flex-center;
-    height: 22px;
-    width: $width;
-    padding: 0px 8px;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 100px;
-    color: $color;
-    background: $background;
-
+@mixin flex-start {
+  display: flex;
+  align-items: flex-start;
 }
 
-@mixin table_icon( $background){
-    @include flex-start;
-    padding: 8px;
-    background-color: $background;
-    border-radius: 8px;
+@mixin text_icon($color, $background, $width) {
+  @include flex-center;
+  height: 22px;
+  width: $width;
+  padding: 0px 8px;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 100px;
+  color: $color;
+  background: $background;
 }
 
-@mixin text_box($color, $background){
-    @include flex-center;
-    background-color: $background;
-    color: $color;
-    border-radius: 4px;
+@mixin table_icon($background) {
+  @include flex-start;
+  padding: 8px;
+  background-color: $background;
+  border-radius: 8px;
+}
 
+@mixin text_box($color, $background) {
+  @include flex-center;
+  background-color: $background;
+  color: $color;
+  border-radius: 4px;
 }

@@ -1,19 +1,15 @@
+@use "../abstract/mixin" as *;
+@use "../abstract/color" as *;
 
-@use '../abstract/mixin' as *;
-@use '../abstract/color' as *;
-
-.grid_container{
-
-    width: 80px;
-    height: 80px;
-    flex-shrink: 0;
-    color: $medium-grey;
-    border: 1px solid $light-grey;
-    border-radius: 7px;
-
-
+.grid_container {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  color: $medium-grey;
+  border: 1px solid $light-grey;
+  border-radius: 7px;
 }
 
-.grid_container .on_click{
-    color: $blue;
+.grid_container .on_click {
+  color: $blue;
 }
