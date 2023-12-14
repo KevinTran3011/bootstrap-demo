@@ -1,6 +1,5 @@
-@use ',,/abstract/mixin' as *;
-@use '../abstract/color' as *;
-
+@use '../abstract/mixin' as *;
+@use '../abstract/color.scss' as *;
 
 .outline_icon{
     @include text_icon(var(--neutral-white, #FFF), var(--light-theme-primary-primary, #5D87FF), 70px)

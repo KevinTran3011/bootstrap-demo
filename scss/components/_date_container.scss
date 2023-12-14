@@ -1,6 +1,5 @@
 @use '../abstract/mixin' as *;
-@use '../abstract/color ' as *;
-
+@use '../abstract/color' as *;
 
 .date_container{
     @include flex_center;
