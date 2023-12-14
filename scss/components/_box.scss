@@ -1,5 +1,5 @@
-@use 'abstract/color' as *;
-@use 'abstract/mixin' as *;
+@use '../abstract/color' as *;
+@use '../abstract/mixin' as *;
 
 .box{
     border: 12px;

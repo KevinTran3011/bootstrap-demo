@@ -1,5 +1,5 @@
-@use 'abstract/color' as *;
-@use 'abstract/mixin' as *;
+@use '../abstract/color' as *;
+@use '../abstract/mixin' as *;
 .sign_up-content {
     @include flex_start;
     flex-direction: row;

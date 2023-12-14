@@ -1,6 +1,6 @@
 
-@use 'abstract/mixin' as * ;
-@use 'abstract/color' as * ;
+@use '../abstract/mixin' as * ;
+@use '../abstract/color' as * ;
 
 .button{
     @include flex_center;
@@ -9,8 +9,8 @@
     padding: 0px 16px;
     gap: 4px;
     border-radius: 4px;
-    background: c.$blue;
-    color: c.$white;
+    background:$blue;
+    color: $white;
 
 }
 

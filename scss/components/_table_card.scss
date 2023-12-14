@@ -1,4 +1,4 @@
-@use 'abstract/mixin' as *;
+@use '../abstract/mixin' as *;
 
 .table-card{
     @include flex_center;

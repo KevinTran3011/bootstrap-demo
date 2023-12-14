@@ -1,5 +1,5 @@
-@use 'abstract/mixin' as *;
-@use 'abstract/typography' as c;
+@use '../abstract/mixin' as *;
+@use '../abstract/typography' as c;
 
 .box_table{
     @include flex_start;

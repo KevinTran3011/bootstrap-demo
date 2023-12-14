@@ -1,5 +1,5 @@
 
-@use 'abstract/mixin' as *;
+@use '../abstract/mixin' as *;
 
 .box_header{
     @include flex_start;
