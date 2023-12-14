@@ -1,7 +1,28 @@
 @use 'abstract/mixin' as *;
+@use 'abstract/typography' as c;
 
-.table_section{
+.box_table{
     @include flex_start;
-    gap: 16px;
     flex-direction: column;
+    gap: 14px;
+
+    .table_section{
+        @include flex_center;
+        gap: 16px;
+    
+        &--title{
+            @include c.subtitle_text--bold;
+            @include flex-center;
+        }
+    
+        &--content{
+            @include flex_center;
+            flex-shrink: 0;
+    
+        }
+
+    
+    
+    }
 }
+

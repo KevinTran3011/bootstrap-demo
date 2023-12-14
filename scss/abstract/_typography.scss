@@ -50,6 +50,11 @@ $letter-spacing: -0.14px !default;
     color: $medium-grey;
 }
 
+.subtitle_text--bold{
+    @extend .subtitle_text;
+    font-weight: 600;
+}
+
 .small_subtitle{
     @extend .subtitle_text;
     font-size: 12px;
