@@ -3,7 +3,25 @@
 @use 'abstract/color' as *;
 
 .dropdown_container{
+    display: none;
 
+    ul{
+        display: none
+
+    }
+     li{
+        @include flex_center;
+        align-self: stretch;
+        gap: 16px;
+        padding: 16px 12px;
+     }
+
+     .dropdown_option{
+        @include flex_center;
+        align-self: stretch;
+
+
+     }
 
     
 }

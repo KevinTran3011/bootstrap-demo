@@ -155,11 +155,6 @@ div.clicked {
   letter-spacing: -0.28px;
 }
 
-.section_image {
-  width: 24px;
-  height: 24px;
-}
-
 .disabled_item {
   display: flex;
   align-items: center;
