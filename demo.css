@@ -124,6 +124,7 @@ div.clicked {
 
 #expanded_arrow.expanded {
   transform: rotate(180deg);
+  transition: transform 0.5s;
 }
 
 .section_header {
@@ -154,6 +155,11 @@ div.clicked {
   line-height: 140%; /* 19.6px */
   letter-spacing: -0.28px;
 }
+
+/* .section_item:focus {
+  background-color: red;
+  color: var(--light-theme-primary-primary, #5d87ff);
+} */
 
 .disabled_item {
   display: flex;
@@ -854,5 +860,10 @@ div.grid_onClick .box_grid_text_title.text_onClick {
 @media only screen and (orientation: portrait) {
   .side_bar {
     display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .side_bar {
+    position: relative;
   }
 }

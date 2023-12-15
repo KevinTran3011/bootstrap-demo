@@ -10,6 +10,6 @@
   border-radius: 7px;
 }
 
-.grid_container .on_click {
+.grid_container :focus {
   color: $blue;
 }

@@ -13,6 +13,10 @@
     align-self: stretch;
     gap: 16px;
     padding: 16px 12px;
+
+    &:focus {
+      background-color: red;
+    }
   }
 
   .dropdown_option {

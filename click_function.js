@@ -1,10 +1,20 @@
 const sidebarSectionOnclick = (event) => {
+  // Remove 'clicked' class from all section items
+  sectionItems.forEach((item) => {
+    item.classList.remove("clicked");
+    const downArrow = item.querySelector("#expanded_arrow");
+    if (downArrow) {
+      downArrow.classList.remove("expanded");
+    }
+  });
+
+  // Add 'clicked' class to the clicked section item
   const targetElement = event.currentTarget;
-  targetElement.classList.toggle("clicked");
+  targetElement.classList.add("clicked");
 
   const downArrow = targetElement.querySelector("#expanded_arrow");
   if (downArrow) {
-    downArrow.classList.toggle("expanded");
+    downArrow.classList.add("expanded");
   }
 };
 

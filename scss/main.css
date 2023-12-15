@@ -103,6 +103,9 @@
   gap: 16px;
   padding: 16px 12px;
 }
+.dropdown_container li:focus {
+  background-color: red;
+}
 .dropdown_container .dropdown_option {
   display: flex;
   align-items: center;
@@ -118,7 +121,7 @@
   border-radius: 7px;
 }
 
-.grid_container .on_click {
+.grid_container :focus {
   color: var(--light-theme-primary-primary, #5d87ff);
 }
 
