@@ -9,7 +9,7 @@ $letter-spacing: -0.14px !default;
 
 // COLOR
 
-.body {
+body {
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight;
@@ -18,17 +18,35 @@ $letter-spacing: -0.14px !default;
   letter-spacing: $letter-spacing;
   color: $primary-color;
 }
+.white_text {
+  color: $textBox_color;
+}
 
 .box_title {
   font-size: 18px;
   line-height: 120%;
   color: $title-color;
   font-weight: 600;
+
+  &--small {
+    @extend .box_title;
+    font-size: 14px;
+  }
+
+  &--medium {
+    @extend .box_title;
+    font-size: 16px;
+  }
 }
 
 .number_title {
   @extend .box_title;
   font-size: 21px;
+
+  &--white {
+    @extend .number_title;
+    color: $textBox_color;
+  }
 }
 
 .logo_title {
@@ -41,8 +59,20 @@ $letter-spacing: -0.14px !default;
   font-size: 12px;
   line-height: 120%;
   color: $medium-grey;
+  &--bold {
+    @extend .legend_text;
+    line-height: 140%;
+  }
 }
 
+.bold_text {
+  color: $title-color;
+  font-weight: 600;
+
+  &--blue {
+    color: $textBox_background;
+  }
+}
 .subtitle_text {
   color: $medium-grey;
 }
@@ -58,6 +88,17 @@ $letter-spacing: -0.14px !default;
 }
 
 .grid_onClick {
-  color: $blue;
+  color: $textBox_background;
   font-weight: 600;
+}
+
+.section_header {
+  color: var(--Light-Theme-Gray-Md-New-Grey, #5a6a85);
+
+  /* Small Semibold */
+  font-family: Plus Jakarta Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 16.8px */
 }

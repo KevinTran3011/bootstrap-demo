@@ -7,9 +7,20 @@
   flex: 1 0 0;
   padding: 10px 12px 10px 12px;
   border-radius: 4px;
+
+  &--disabled {
+    @extend .section_item;
+    opacity: 0.5;
+  }
+
+  &--icon {
+    @include flex_center;
+    flex-direction: row;
+    padding-right: 8px;
+  }
 }
 
-.disabled_item {
-  @extend .section_item;
-  opacity: 0.5;
+.clicked {
+  background-color: $textBox_background;
+  color: $textBox_color;
 }

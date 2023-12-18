@@ -1,9 +1,9 @@
-@mixin flex-center {
+@mixin flex_center {
   display: flex;
   align-items: center;
 }
 
-@mixin flex-start {
+@mixin flex_start {
   display: flex;
   align-items: flex-start;
 }
@@ -31,5 +31,25 @@
   @include flex-center;
   background-color: $background;
   color: $color;
+  font-weight: 600;
+  font-size: 12px;
   border-radius: 4px;
+  justify-content: center;
+}
+
+@mixin team_container($color, $background) {
+  @include flex-center;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: $color;
+  background-color: $background;
+}
+
+@mixin leader_container($background, $width, $height) {
+  border-radius: 100px;
+  width: $width;
+  height: $height;
+  background-color: $background;
+  flex: 0;
 }

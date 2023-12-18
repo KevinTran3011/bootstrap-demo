@@ -1,5 +1,10 @@
 @use "../abstract/color" as *;
 @use "../abstract/mixin" as *;
+
+.sign_up {
+  border-radius: 12px;
+  background: var(--Light-Theme-Primary-Light-Primary, #ecf2ff);
+}
 .sign_up-content {
   @include flex_start;
   flex-direction: row;

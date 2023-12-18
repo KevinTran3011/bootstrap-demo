@@ -13,14 +13,19 @@
     align-self: stretch;
     gap: 16px;
     padding: 16px 12px;
-
-    &:focus {
-      background-color: red;
-    }
   }
+}
 
-  .dropdown_option {
-    @include flex_center;
-    align-self: stretch;
+.dropdown_option {
+  @include flex_center;
+  padding: 10px 12px;
+  align-self: stretch;
+}
+#userDropdown,
+#profileList,
+#cardList {
+  display: none;
+  li {
+    padding: 16px 12px;
   }
 }

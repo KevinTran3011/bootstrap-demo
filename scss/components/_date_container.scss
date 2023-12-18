@@ -10,12 +10,19 @@
   gap: 4px;
   border-radius: 3px;
   border: 1px solid $light-grey;
-  background: $white;
+  background: $textBox_color;
   color: $medium-grey;
 
+  &--thin {
+    @extend .date_container;
+    padding: 2px 8px;
+  }
+
   &--blue {
-    background: $blue;
-    color: $white;
+    background: $textBox_background;
+    color: $textBox_color;
     font-size: 14px;
+    padding: 2px 8px;
+    border-radius: 4px;
   }
 }

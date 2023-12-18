@@ -1,13 +1,29 @@
+@use "../abstract/typography" as *;
+
 .logo_image {
   position: absolute;
-  top: 15px;
-  left: 15px;
 
   &--left {
+    @extend .logo_image;
     z-index: 1;
   }
   &--right {
+    @extend .logo_image;
+    left: 10px;
     z-index: 3;
     mix-blend-mode: multiply;
   }
+}
+
+#closeButton {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #closeButton {
+    display: none;
+  }
+}
+.logo_title {
+  margin-left: 50px;
 }

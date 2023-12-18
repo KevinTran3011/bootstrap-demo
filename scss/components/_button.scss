@@ -1,13 +1,13 @@
 @use "../abstract/mixin" as *;
 @use "../abstract/color" as *;
 
-.button {
+.modified_button {
   @include flex_center;
   height: 36px;
   width: 76px;
   padding: 0px 16px;
   gap: 4px;
   border-radius: 4px;
-  background: $blue;
-  color: $white;
+  background: $textBox_background;
+  color: $textBox_color;
 }

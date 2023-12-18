@@ -1,0 +1,19 @@
+@use "../abstract/mixin" as *;
+@use "../abstract/color" as *;
+
+.team_container {
+  @include flex_center;
+  gap: 12px;
+}
+
+.team_container--blue {
+  @include team_container($textBox_background, $light-blue);
+}
+
+.team_container--green {
+  @include team_container($green, $light-green);
+}
+
+.team_container--red {
+  @include team_container($red, $light-red);
+}

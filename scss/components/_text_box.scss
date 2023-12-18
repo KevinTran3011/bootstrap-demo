@@ -2,7 +2,7 @@
 @use "../abstract/color" as *;
 
 .text_box--blue {
-  @include text_box($blue, $light-blue);
+  @include text_box($textBox_background, $light-blue);
 }
 
 .text_box--red {
@@ -17,17 +17,24 @@
 }
 
 .text_box--white {
-  @include text_box($blue, $white);
+  @include text_box($textBox_background, $textBox_color);
   padding: 2px 8px;
+  height: 20px;
+  width: 43px;
+  margin-left: 180px;
+  position: relative;
+  margin-bottom: 10px;
 
-  & ::after {
+  &:after {
     content: "";
     position: absolute;
-    width: 4;
-    height: 8;
+    width: 0;
+    height: 0;
     border-left: 6px transparent solid;
-    border-top: 6px solid #fff;
+    border-top: 6px solid $textBox_color;
     border-right: 6px transparent solid;
     margin-top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

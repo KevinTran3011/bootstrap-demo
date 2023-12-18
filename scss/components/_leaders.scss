@@ -1,0 +1,17 @@
+@use "../abstract/color" as *;
+@use "../abstract/mixin" as *;
+
+.leader_container {
+  &--blue_low {
+    @include leader_container($light-blue, 48px, 48px);
+  }
+  &--red_low {
+    @include leader_container($light-red, 48px, 48px);
+  }
+  &--blue_high {
+    @include leader_container($light-blue, 54px, 54px);
+  }
+  &--red_high {
+    @include leader_container($light-red, 54px, 54px);
+  }
+}

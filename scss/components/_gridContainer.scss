@@ -1,6 +1,12 @@
 @use "../abstract/mixin" as *;
 @use "../abstract/color" as *;
 
+.grid_Section {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin: 30px 16px 30px 15px;
+}
 .grid_container {
   width: 80px;
   height: 80px;
@@ -8,8 +14,16 @@
   color: $medium-grey;
   border: 1px solid $light-grey;
   border-radius: 7px;
-}
 
-.grid_container :focus {
-  color: $blue;
+  & .grid {
+    width: 24px;
+    height: 24px;
+
+    flex-shrink: 0;
+    margin: 10px 28px 10px 28px;
+  }
+
+  & .grid_text {
+    text-align: center;
+  }
 }

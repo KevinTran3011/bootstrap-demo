@@ -2,27 +2,16 @@
 @use "../abstract/color.scss" as *;
 
 .outline_icon {
-  @include text_icon(
-    var(--neutral-white, #fff),
-    var(--light-theme-primary-primary, #5d87ff),
-    70px
-  );
+  @include text_icon($textBox_color, $textBox_background, 70px);
 }
 
 .coded_icon {
-  @include text_icon(
-    var(--light-theme-primary-primary, #5d87ff),
-    var(--neutral-white, #fff),
-    70px
-  );
+  @include text_icon($textBox_background, $textBox_color, 70px);
+  border: $textBox_background 1px solid;
 }
 
 .number_icon {
-  @include text_icon(
-    var(--neutral-white, #fff),
-    var(--light-theme-primary-primary, #5d87ff),
-    22px
-  );
+  @include text_icon($textBox_color, $textBox_background, 22px);
 }
 
 .table_icon--transparent_blue {
@@ -42,4 +31,11 @@
 }
 .table_icon--red {
   @include table_icon($light-red);
+}
+
+.table_icon--speech {
+  @include table_icon(rgba(255, 255, 255, 0.1));
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
 }

@@ -21,25 +21,35 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
 
-    <link rel="stylesheet" href="demo.css" />
+    <link rel="stylesheet" href="scss/main.css" />
 
     <title>Bootstrap 5</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-top: 30px">
       <div class="row">
         <div class="col-lg-2 col-md-1 col-sm-12">
           <div class="side_bar">
             <div class="logo" style="margin-bottom: 15px; padding: 15px">
               <div class="logo_image">
-                <span class="logo_image-left"
+                <span class="logo_image--left"
                   ><img src="images/left_section/Logo_left.png"
                 /></span>
-                <span class="logo_image-right"
+                <span class="logo_image--right"
                   ><img src="images/left_section/Logo_right.png"
                 /></span>
               </div>
-              <div class="logo_title">Modernize</div>
+
+              <div class="logo_title">
+                Modernize
+                <span
+                  class="material-symbols-outlined"
+                  id="closeButton"
+                  onclick="hideSidebar()"
+                >
+                  close
+                </span>
+              </div>
             </div>
             <div class="dashboard">
               <div class="section_header">DASHBOARDS</div>
@@ -47,7 +57,7 @@
                 <div class="section_item">
                   <span class="material-icons"> shopping_bag </span>Modern
                 </div>
-                <div class="analytical_section">
+                <div class="section_item--icon">
                   <div class="section_item">
                     <span class="material-icons"> shopping_bag </span>Analytical
                   </div>
@@ -118,10 +128,8 @@
                 <div class="section_item">
                   <span class="material-icons"> shopping_bag </span>eCommerce
                 </div>
-                <div class="section_item">
-                  <div class="disabled_item">
-                    <span class="material-icons"> shopping_bag </span>Disabled
-                  </div>
+                <div class="section_item--disabled">
+                  <span class="material-icons"> shopping_bag </span>Disabled
                 </div>
               </div>
             </div>
@@ -129,26 +137,24 @@
             <div class="others">
               <div class="section_header">OTHERS</div>
               <div class="others-items-text">
-                <div class="avatar-container">
+                <div class="section_item--icon">
                   <div class="section_item">
                     <span class="material-icons"> shopping_bag </span>Avatar
                   </div>
                   <div class="coded_icon">Coded</div>
                 </div>
-                <div class="outline_container">
+                <div class="section_item--icon">
                   <div class="section_item">
                     <span class="material-icons"> shopping_bag </span>Outline
                   </div>
                   <div class="outline_icon">Outline</div>
                 </div>
-                <div class="basic-container">
+                <div class="section_item--icon">
                   <div class="section_item">
                     <span class="material-icons"> shopping_bag </span>
                     <div class="basic-text">
                       Basic
-                      <div class="box_subtitles" style="font-size: 12px">
-                        8+ Basic components
-                      </div>
+                      <div class="box_subtitles">8+ Basic components</div>
                     </div>
                   </div>
                   <span class="number_icon">9</span>
@@ -158,7 +164,9 @@
             <div class="sign_up">
               <div class="sign_up-content">
                 <div class="sign_up-items">
-                  <div class="sign_up-item-1">Unlimited Access</div>
+                  <div class="sign_up-item-1">
+                    <span class="box_title--medium">Unlimited Access</span>
+                  </div>
                   <div class="modified_button">Signup</div>
                 </div>
                 <div class="sign_up-image">
@@ -168,115 +176,81 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-10 col-md-11 col-sm-12 overflow-auto">
+        <div class="col-lg-10 col-md-11 col-sm-12">
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="nav-bar" style="background-color: #fff">
-                <div class="row">
-                  <div class="col-lg-9 col-sm-2">
-                    <div class="nav_bar_left">
-                      <img
-                        src="images/nav_bar/menu_FILL0_wght300_GRAD0_opsz24 2.png"
-                        class="nav-bar-item"
-                      />
-                      <img
-                        src="images/nav_bar/Search.png"
-                        class="nav-bar-item"
-                      />
-                    </div>
+              <div class="nav_bar">
+                <div class="col-lg-9 col-sm-2">
+                  <div class="nav_bar--left">
+                    <img
+                      src="images/nav_bar/menu_FILL0_wght300_GRAD0_opsz24 2.png"
+                      class="nav-bar-item"
+                      onclick="showSidebar();"
+                    />
+                    <img src="images/nav_bar/Search.png" class="nav-bar-item" />
                   </div>
-                  <div class="col-lg-3 col-sm-10">
-                    <div class="nav_bar_right">
-                      <img src="images/nav_bar/Notification.png" />
-                      <img
-                        src="images/nav_bar/shopping_cart_FILL0_wght300_GRAD0_opsz24 2.png"
-                      />
-                      <img
-                        src="images/nav_bar/translate_FILL0_wght300_GRAD0_opsz24 1.png"
-                      />
-                      <img src="images/nav_bar/Grid.png" class="nav-bar-item" />
-                      <img
-                        src="images/nav_bar/Ellipse 58.png"
-                        style="margin-right: 0px"
-                      />
-                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-10">
+                  <div class="nav_bar--right">
+                    <img src="images/nav_bar/Notification.png" />
+                    <img
+                      src="images/nav_bar/shopping_cart_FILL0_wght300_GRAD0_opsz24 2.png"
+                    />
+                    <img
+                      src="images/nav_bar/translate_FILL0_wght300_GRAD0_opsz24 1.png"
+                    />
+                    <img src="images/nav_bar/Grid.png" class="nav-bar-item" />
+                    <img src="images/nav_bar/Ellipse 58.png" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row" style="padding-left: 30px">
             <div class="col-lg-8" style="padding: 15px">
-              <div class="box-a" style="background-color: #ebf3fe">
+              <div class="box--first">
                 <div class="col-lg-6">
                   <div class="box-A-text">
-                    <div
-                      class="box_titles"
-                      style="font-size: 21px; margin-bottom: 20px"
-                    >
+                    <div class="box_title">
                       <div>Welcome back Natalia !</div>
                       <div>Check dashboard</div>
                     </div>
                     <div class="text-middle">
-                      <p
-                        class="box_subtitles"
-                        style="
-                          color: var(
-                            --light-theme-gray-medium-blue-grey,
-                            #7c8fac
-                          );
-                        "
-                      >
+                      <p class="subtitle_text">
                         You have earned 54% more than last month<br />
                         which is a great thing.
                       </p>
-                      <div class="text-middle-2">
-                        <p class="box_titles" style="font-size: 21px">
-                          $63,489.50
-                        </p>
-                        <p class="date_container" style="padding: 2px 8px">
-                          Year 2022
-                        </p>
+                      <div class="table_section--box_K">
+                        <p class="number_title">$63,489.50</p>
+                        <p class="date_container--thin">Year 2022</p>
                       </div>
                     </div>
                     <div class="modified_button">Check</div>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <img class="box-A-image" src="images/Box_A/desk_girl.png" />
+                  <img class="box_A--image" src="images/Box_A/desk_girl.png" />
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4">
               <div class="col-lg-12" style="padding: 15px 0px 15px 0px">
-                <div class="box-b" style="background-color: #5d87ff">
-                  <div class="box-b-content-container">
-                    <div class="col-lg-9 col-md-9">
+                <div class="box--blue">
+                  <div class="box_header">
+                    <div class="col-lg-9 col-md-10">
                       <div class="box-b-content">
-                        <div
-                          class="box_titles"
-                          style="color: #ffffff; font-size: 21px"
-                        >
-                          3267
-                        </div>
-                        <div
-                          class="box_subtitles"
-                          style="
-                            color: var(--light-theme-gray-pure-white, #fff);
-                          "
-                        >
-                          ProductGoals
-                        </div>
+                        <div class="number_title--white">3267</div>
+                        <div class="white_text">ProductGoals</div>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-3">
-                      <div class="box-b-image">
+                    <div class="col-lg-3 col-md-2">
+                      <div class="table_icon--speech">
                         <img src="images/Box_B/Comment.png" />
                       </div>
                     </div>
                   </div>
-                  <div class="percentage-text">65%</div>
+                  <div class="text_box--white">65%</div>
                   <div class="w3-gray w3-round-xlarge">
                     <div
                       class="w3-container w3-white w3-round-xlarge"
@@ -287,37 +261,35 @@
               </div>
 
               <div class="col-lg-12" style="padding: 15px 0px 15px 0px">
-                <div class="box-c">
-                  <div class="box-c-text">
-                    <div class="box_subtitles">Earnings</div>
-                    <div class="box_titles">$678,298</div>
-                    <div
-                      class="box-c-text-percentage"
-                      style="
-                        color: var(
-                          --light-theme-gray-medium-blue-grey,
-                          #7c8fac
-                        );
-                      "
-                    >
-                      <img src="images/Box_C/Call - up.png" />+9%
+                <div class="box--side">
+                  <div class="table_section">
+                    <div class="col-lg-6 col-md-6">
+                      <div class="box-c-text">
+                        <div class="box_subtitles">Earnings</div>
+                        <div class="number_title">$678,298</div>
+                        <div class="small_subtitle">
+                          <img src="images/Box_C/Call - up.png" />+9%
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="box-c-bar-chart">
-                    <canvas class="bar-chart"></canvas>
+                    <div class="col-lg-6 col-md-6">
+                      <div class="chart_container--bar">
+                        <canvas class="bar-chart"></canvas>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="row">
+          <div class="row" style="padding-left: 30px">
             <div class="col-lg-8" style="padding: 15px">
-              <div class="box-d">
+              <div class="box">
                 <div class="box_header">
-                  <div class="col-lg-9">
+                  <div class="col-lg-9" id="seperated_header">
                     <div class="box-d-text">
-                      <div class="box_titles" style="margin-bottom: 4px">
+                      <div class="box_title" style="margin-bottom: 4px">
                         Revenue updates
                       </div>
                       <div class="box_subtitles">Overview of Profit</div>
@@ -350,17 +322,17 @@
               </div>
             </div>
             <div class="col-lg-4" style="padding: 15px">
-              <div class="box-e">
+              <div class="box" style="height: 490px">
                 <div class="box-e-text" style="margin-bottom: 30px">
-                  <div class="box_titles" style="margin-bottom: 4px">
+                  <div class="box_title" style="margin-bottom: 4px">
                     Yearly Updates
                   </div>
                   <div class="box_subtitles">Overview of Profit</div>
                 </div>
-                <div class="box-e-chart">
-                  <!-- <canvas class="doughnut_chart"></canvas> -->
+                <div class="chart_container--doughnut">
+                  <canvas class="doughnut_chart"></canvas>
                   <hr />
-                  <div class="doughnut_legend">
+                  <div class="chart_legend">
                     <div class="legend_text">
                       <div class="doughnut_legend_1"></div>
                       2020
@@ -379,11 +351,11 @@
             </div>
           </div>
 
-          <div class="row">
+          <div class="row" style="padding-left: 30px">
             <div class="col-lg-4" style="padding: 15px">
-              <div class="box-f">
+              <div class="box">
                 <div class="box-f-text">
-                  <div class="box_titles" style="margin-bottom: 4px">
+                  <div class="box_title" style="margin-bottom: 4px">
                     Recent Transactions
                   </div>
                   <div class="box_subtitles">Income vs Expenses</div>
@@ -391,29 +363,25 @@
                     <!-- FOR THE PAYPALS -->
 
                     <div class="table_section">
-                      <div class="box_left">
-                        <div class="box_icon_paypal">
+                      <div class="table-card">
+                        <div class="table_icon--transparent_blue">
                           <img
                             class="paypal_image"
                             src="images/Box-F/paypal 1.png"
                           />
                         </div>
                         <div class="box-f-paypals-description">
-                          <div class="box_titles" style="font-size: 16px">
-                            Paypal Transfers
-                          </div>
+                          <div class="box_title--medium">Paypal Transfers</div>
                           <div class="box_subtitles">Money added</div>
                         </div>
                       </div>
 
-                      <div class="box_titles" style="font-size: 14px">
-                        +$6,235
-                      </div>
+                      <div class="bold_text">+$6,235</div>
                     </div>
                     <!-- FOR THE WALLETS -->
                     <div class="table_section">
-                      <div class="box_left">
-                        <div class="box_icon_wallet">
+                      <div class="table-card">
+                        <div class="table_icon--green">
                           <div class="wallet_image">
                             <img
                               class="wallet_image"
@@ -422,89 +390,64 @@
                           </div>
                         </div>
                         <div class="box-f-wallets-description">
-                          <div class="box_titles" style="font-size: 16px">
-                            Wallet
-                          </div>
+                          <div class="box_title--medium">Wallet</div>
                           <div class="box_subtitles" style="font-size: 14px">
                             Bill payment
                           </div>
                         </div>
                       </div>
-                      <div
-                        class="box_titles"
-                        style="color: #7c8fac; font-size: 14px"
-                      >
-                        +$345
-                      </div>
+                      <div class="subtitle_text">+$345</div>
                     </div>
                     <!-- FOR THE CREDIT CARDS -->
 
                     <div class="table_section">
-                      <div class="box_left">
-                        <div class="box_icon_credit">
+                      <div class="table-card">
+                        <div class="table_icon--orange">
                           <img
                             class="credit_card_image"
                             src="images/Box-F/master-card 1.png"
                           />
                         </div>
                         <div class="box-f-credit-cards-description">
-                          <div class="box_titles" style="font-size: 16px">
-                            Credit card
-                          </div>
+                          <div class="box_title--medium">Credit card</div>
                           <div class="box_subtitles">Money reversed</div>
                         </div>
                       </div>
 
-                      <div class="box_titles" style="font-size: 14px">
-                        +$2,235
-                      </div>
+                      <div class="bold_text">+$2,235</div>
                     </div>
                     <!-- FOR BANK TRANSFER -->
                     <div class="table_section">
-                      <div class="box_left">
-                        <div class="box_icon_bank">
+                      <div class="table-card">
+                        <div class="table_icon--blue">
                           <img
                             class="bank_image"
                             src="images/Box-F/money 1.png"
                           />
                         </div>
                         <div class="box-f-bank-transfer-description">
-                          <div class="box_titles" style="font-size: 16px">
-                            Bank Transfer
-                          </div>
+                          <div class="box_title--medium">Bank Transfer</div>
                           <div class="box_subtitles">Money added</div>
                         </div>
                       </div>
-                      <div
-                        class="box_titles"
-                        style="color: #7c8fac; font-size: 14px"
-                      >
-                        +$320
-                      </div>
+                      <div class="subtitle_text">+$320</div>
                     </div>
 
                     <!-- FOR THE REFUND SECTION -->
                     <div class="table_section">
-                      <div class="box_left">
-                        <div class="box_icon_refund">
+                      <div class="table-card">
+                        <div class="table_icon--red">
                           <img
                             class="refund_image"
                             src="images/Box-F/pie-chart (1) 1.png"
                           />
                         </div>
                         <div class="box-f-refund-description">
-                          <div class="box_titles" style="font-size: 16px">
-                            Refund
-                          </div>
+                          <div class="box_title--medium">Refund</div>
                           <div class="box_subtitles">Bill payment</div>
                         </div>
                       </div>
-                      <div
-                        class="box_titles"
-                        style="color: #7c8fac; font-size: 14px"
-                      >
-                        -$32
-                      </div>
+                      <div class="subtitle_text">-$32</div>
                     </div>
 
                     <button type="button" class="btn btn-outline-primary">
@@ -515,10 +458,10 @@
               </div>
             </div>
             <div class="col-lg-8" style="padding: 15px">
-              <div class="box-g">
+              <div class="box">
                 <div class="box_header">
                   <div class="col-lg-9 col-md-9">
-                    <div class="box_titles" style="margin-bottom: 4px">
+                    <div class="box_title" style="margin-bottom: 4px">
                       Product Perfomances
                     </div>
                     <div class="box_subtitles">How it performs</div>
@@ -534,123 +477,83 @@
                     </div>
                   </div>
                 </div>
-                <div class="box-g-middle">
-                  <div class="box_grid_text">
-                    <div class="box_g_grid" onclick="gridSectionOnClick(this)">
+                <div class="grid_Section">
+                  <div class="grid_container">
+                    <div class="grid" onclick="gridSectionOnClick(this)">
                       <span class="material-symbols-outlined gray"> apps </span>
                     </div>
-                    <div class="box_grid_text_title">App</div>
+                    <div class="grid_text">App</div>
                   </div>
-                  <div class="box_grid_text">
-                    <div class="box_g_grid">
+                  <div class="grid_container">
+                    <div class="grid">
                       <span class="material-symbols-outlined gray"> apps </span>
                     </div>
-                    <div class="box_grid_text_title">Mobile</div>
+                    <div class="grid_text">Mobile</div>
                   </div>
-                  <div class="box_grid_text">
-                    <div class="box_g_grid">
+                  <div class="grid_container">
+                    <div class="grid">
                       <span class="material-symbols-outlined gray"> apps </span>
                     </div>
-                    <div class="box_grid_text_title">SaaS</div>
+                    <div class="grid_text">SaaS</div>
                   </div>
-                  <div class="box_grid_text">
-                    <div class="box_g_grid">
+                  <div class="grid_container">
+                    <div class="grid">
                       <span class="material-symbols-outlined gray"> apps </span>
                     </div>
-                    <div class="box_grid_text_title">Products</div>
+                    <div class="grid_text">Products</div>
                   </div>
-                  <div class="box_grid_text">
-                    <div class="box_g_grid">
+                  <div class="grid_container">
+                    <div class="grid">
                       <span class="material-symbols-outlined gray"> apps </span>
                     </div>
-                    <div class="box_grid_text_title">Others</div>
+                    <div class="grid_text">Others</div>
                   </div>
                 </div>
                 <div class="box_table">
-                  <div class="table_header">
-                    <div
-                      class="col-lg-4 col-md-4 col-sm-4"
-                      style="align-items: center"
-                    >
-                      <div
-                        class="box_titles"
-                        style="color: #7c8fac; font-size: 14px"
-                      >
-                        Assigned
-                      </div>
+                  <div class="table_section--title">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <div class="box_titles">Assigned</div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2">
-                      <div
-                        class="box_titles"
-                        style="color: #7c8fac; font-size: 14px"
-                      >
-                        Progress
-                      </div>
+                      <div class="box_titles">Progress</div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2">
-                      <div
-                        class="box_titles"
-                        style="color: #7c8fac; font-size: 14px"
-                      >
-                        Priority
-                      </div>
+                      <div class="box_titles">Priority</div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2">
-                      <div
-                        class="box_titles"
-                        style="color: #7c8fac; font-size: 14px"
-                      >
-                        Budget
-                      </div>
+                      <div class="box_titles">Budget</div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2">
-                      <div
-                        class="box_titles"
-                        style="color: #7c8fac; font-size: 14px"
-                      >
-                        Chart
-                      </div>
+                      <div class="box_titles">Chart</div>
                     </div>
                   </div>
 
                   <hr />
-                  <div class="table_section" style="align-items: center">
+                  <div class="table_section">
                     <div class="col-lg-4 col-md-4">
-                      <div class="table_section_text">
+                      <div class="table-card">
                         <div class="box-g-table-minecraft-assigned-icon">
                           <img src="images/Box-G/Minecraft.png" />
                         </div>
                         <div class="box-g-table-minecraft-assigned-text">
-                          <div class="box_titles" style="font-size: 14px">
-                            Minecraft App
-                          </div>
-                          <div class="box_subtitles" style="font-size: 12px">
-                            Jason Roy
-                          </div>
+                          <div class="box_title--small">Minecraft App</div>
+                          <div class="legend_text--bold">Jason Roy</div>
                         </div>
                       </div>
                     </div>
 
                     <div class="col-lg-2 col-md-2">
-                      <div
-                        class="box_subtitles"
-                        style="
-                          display: flex;
-                          width: 100px;
-                          align-items: center;
-                          flex-shrink: 0;
-                        "
-                      >
-                        73.2%
+                      <div class="table_section--content">73.2%</div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2">
+                      <div class="table_section--content">
+                        <div class="text_box--green">Low</div>
                       </div>
                     </div>
 
                     <div class="col-lg-2 col-md-2">
-                      <div class="box-g-table-minecraft-priority">Low</div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-2">
-                      <div class="box_subtitles">$3.5k</div>
+                      <div class="table_section--content">$3.5k</div>
                     </div>
 
                     <div class="col-lg-2 col-md-2">
@@ -663,41 +566,29 @@
 
                   <div class="table_section">
                     <div class="col-lg-4 col-md-4">
-                      <div class="table_section_text">
+                      <div class="table-card">
                         <div class="box-g-table-minecraft-assigned-icon">
                           <img src="images/Box-G/WebApp.png" />
                         </div>
                         <div class="box-g-table-minecraft-assigned-text">
-                          <div class="box_titles" style="font-size: 14px">
-                            Web App Project
-                          </div>
-                          <div class="box_subtitles" style="font-size: 12px">
-                            Mathew Flintoff
-                          </div>
+                          <div class="box_title--small">Web App Project</div>
+                          <div class="legend_text--bold">Mathew Flintoff</div>
                         </div>
                       </div>
                     </div>
 
                     <div class="col-lg-2 col-md-2">
-                      <div
-                        class="box_subtitles"
-                        style="
-                          display: flex;
-                          width: 100px;
-                          align-items: center;
-                          flex-shrink: 0;
-                        "
-                      >
-                        56.8%
+                      <div class="table_section--content">56.8%</div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2">
+                      <div class="table_section--content">
+                        <div class="text_box--orange">Medium</div>
                       </div>
                     </div>
 
                     <div class="col-lg-2 col-md-2">
-                      <div class="box_priority">Medium</div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-2">
-                      <div class="box_subtitles">$3.5k</div>
+                      <div class="table_section--content">$3.5k</div>
                     </div>
 
                     <div class="col-lg-2 col-md-2">
@@ -710,43 +601,31 @@
 
                   <div class="table_section">
                     <div class="col-lg-4 col-md-4">
-                      <div class="table_section_text">
+                      <div class="table-card">
                         <div class="box-g-table-minecraft-assigned-icon">
                           <img src="images/Box-G/Modernize Dashboard.png" />
                         </div>
                         <div class="box-g-table-minecraft-assigned-text">
-                          <div class="box_titles" style="font-size: 14px">
+                          <div class="box_title--small">
                             Modernize Dashboard
                           </div>
-                          <div class="box_subtitles" style="font-size: 12px">
-                            Anil Kumar
-                          </div>
+                          <div class="legend_text--bold">Anil Kumar</div>
                         </div>
                       </div>
                     </div>
 
                     <div class="col-lg-2 col-md-2">
-                      <div
-                        class="box_subtitles"
-                        style="
-                          display: flex;
-                          width: 100px;
-                          align-items: center;
-                          flex-shrink: 0;
-                        "
-                      >
-                        25%
+                      <div class="table_section--content">25%</div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2">
+                      <div class="table_section--content">
+                        <div class="text_box--blue">Very High</div>
                       </div>
                     </div>
 
                     <div class="col-lg-2 col-md-2">
-                      <div class="box-g-table-minecraft-priority">
-                        Very High
-                      </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-2">
-                      <div class="box_subtitles">$3.5k</div>
+                      <div class="table_section--content">$3.5k</div>
                     </div>
 
                     <div class="col-lg-2 col-md-2">
@@ -758,53 +637,33 @@
                   <hr />
                   <div class="table_section">
                     <div class="col-lg-4 col-md-4">
-                      <div class="table_section_text">
+                      <div class="table-card">
                         <div class="box-g-table-minecraft-assigned-icon">
                           <img src="images/Box-G/Dashboard co.png" />
                         </div>
                         <div class="box-g-table-minecraft-assigned-text">
-                          <div class="box_titles" style="font-size: 14px">
-                            Dashboard Co
-                          </div>
-                          <div class="box_subtitles" style="font-size: 12px">
-                            George Cruize
-                          </div>
+                          <div class="box_title--small">Dashboard Co</div>
+                          <div class="legend_text--bold">George Cruize</div>
                         </div>
                       </div>
                     </div>
 
                     <div class="col-lg-2 col-md-2">
-                      <div
-                        class="box_subtitles"
-                        style="
-                          display: flex;
-                          width: 100px;
-                          align-items: center;
-                          flex-shrink: 0;
-                        "
-                      >
-                        96.3%
+                      <div class="table_section--content">96.3%</div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2">
+                      <div class="table_section--content">
+                        <div class="text_box--red">High</div>
                       </div>
                     </div>
 
                     <div class="col-lg-2 col-md-2">
-                      <div class="box-g-table-minecraft-priority">High</div>
+                      <div class="table_section--content">$3.5k</div>
                     </div>
 
                     <div class="col-lg-2 col-md-2">
-                      <div class="box_subtitles">$3.5k</div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-2">
-                      <div
-                        class="box-g-table-minecraft-chart"
-                        style="
-                          display: flex;
-                          width: 100px;
-                          align-items: flex-start;
-                          flex-shrink: 0;
-                        "
-                      >
+                      <div>
                         <img src="images/Box-G/Vector 3.png" />
                       </div>
                     </div>
@@ -814,12 +673,15 @@
             </div>
           </div>
 
-          <div class="row">
+          <div class="row" style="padding-left: 30px">
             <div class="col" style="padding: 15px">
-              <div class="box-h">
-                <div class="box-h-top">
-                  <div class="col-lg-10 col-md-10 col-sm-10">
-                    <div class="box_titles h">Total profit</div>
+              <div class="box--bottom">
+                <div class="box_header--h">
+                  <div
+                    class="col-lg-10 col-md-10 col-sm-10"
+                    id="seperated_header"
+                  >
+                    <div class="box_title">Total profit</div>
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-2">
                     <div class="box-h-top-icon">
@@ -827,48 +689,42 @@
                     </div>
                   </div>
                 </div>
-                <div class="box-h-mid">
-                  <div class="box-h-mid-icon">
+                <div class="table-card">
+                  <div class="table_icon--transparent_blue">
                     <img src="images/Box-G/Grid blue.png" />
                   </div>
                   <div class="box-h-mid-text">
-                    <div class="box_titles">$63,489.50</div>
+                    <div class="number_title">$63,489.50</div>
                     <div class="box_subtitles">Total Earnings</div>
                   </div>
                 </div>
-                <div class="box-h-chart">
+                <div class="chart_container--line_2">
                   <canvas class="line-chart-2"></canvas>
                 </div>
               </div>
             </div>
             <div class="col" style="padding: 15px">
-              <div class="box-i">
-                <div class="box_titles" style="margin-bottom: 21px">
+              <div class="box--bottom">
+                <div class="box_title" style="margin-bottom: 21px">
                   Medical pro branding
                 </div>
 
-                <div class="box-i-content">
-                  <div class="box-i-date">16 Apr, 2022</div>
-                  <div class="box_detail">
+                <div class="table_section--inline">
+                  <div class="date_container--blue">16 Apr, 2022</div>
+                  <div class="table_section--medical">
                     <div class="box_details">
-                      <div class="box_subtitles">Due Date</div>
-                      <div class="box_titles" style="font-size: 14px">
-                        Oct 23, 2022
-                      </div>
+                      <div class="legend_text--bold">Due Date</div>
+                      <div class="box_title--small">Oct 23, 2022</div>
                     </div>
                     <hr />
                     <div class="box_details">
-                      <div class="box_subtitles">Budget</div>
-                      <div class="box_titles" style="font-size: 14px">
-                        $98,450
-                      </div>
+                      <div class="legend_text--bold">Budget</div>
+                      <div class="box_title--small">$98,450</div>
                     </div>
                     <hr />
                     <div class="box_details">
-                      <div class="box_subtitles">Expenses</div>
-                      <div class="box_titles" style="font-size: 14px">
-                        $48,240
-                      </div>
+                      <div class="legend_text--bold">Expenses</div>
+                      <div class="box_title--small">$48,240</div>
                     </div>
                   </div>
                   <hr
@@ -880,11 +736,11 @@
                   />
 
                   <div class="box_team_section">
-                    <div class="box_titles">Teams</div>
-                    <div class="box_teams">
-                      <div class="box_team_bootstrap">Bootstrap</div>
-                      <div class="box_team_react">React</div>
-                      <div class="box_team_angular">Angular</div>
+                    <div class="box_title--medium">Teams</div>
+                    <div class="team_container">
+                      <div class="team_container--blue">Bootstrap</div>
+                      <div class="team_container--green">React</div>
+                      <div class="team_container--red">Angular</div>
                     </div>
                   </div>
                   <hr
@@ -895,18 +751,18 @@
                     "
                   />
                   <div class="box-i-leaders">
-                    <div class="box_titles">Leaders</div>
-                    <div class="box-i-leaders-members">
-                      <div class="box-i-leader-members-1">
+                    <div class="box_title--medium">Leaders</div>
+                    <div class="grid_Section">
+                      <div class="leader_container--blue_high">
                         <img src="images/Box_I/Leader_1.png" />
                       </div>
-                      <div class="box-i-leader-members-2">
+                      <div class="leader_container--red_high">
                         <img src="images/Box_I/Leader_2.png" />
                       </div>
-                      <div class="box-i-leader-members-3">
+                      <div class="leader_container--blue_low">
                         <img src="images/Box_I/Leader_3.png" />
                       </div>
-                      <div class="box-i-leader-members-4">
+                      <div class="leader_container--red_low">
                         <img src="images/Box_I/Leader_4.png" />
                       </div>
                     </div>
@@ -915,10 +771,10 @@
               </div>
             </div>
             <div class="col" style="padding: 15px">
-              <div class="box-k">
-                <div class="box_titles">Daily activities</div>
-                <div class="box-k-contents">
-                  <div class="box-k-content">
+              <div class="box--bottom">
+                <div class="box_title">Daily activities</div>
+                <div class="box_table--box_K">
+                  <div class="table_section--box_K">
                     <div class="box_k_timestamp">09:46</div>
                     <div class="box_k_dot">
                       <img src="images/Box_K/Blue_Elipse.png" />
@@ -927,19 +783,19 @@
                       Payment received from John Doe of $385.90
                     </div>
                   </div>
-                  <div class="box-k-content">
+                  <div class="table_section--box_K">
                     <div class="box_k_timestamp">09:46</div>
                     <div class="box_k_dot">
                       <img src="images/Box_K/Cyan_Elipse.png" />
                     </div>
                     <div class="box-k-content-2-text">
-                      <div class="box_titles" style="font-size: 14px">
+                      <div class="bold_text">
                         New Sales Recorded
-                        <span style="color: #5d87ff">#ML-3467</span>
+                        <span class="bold_text--blue">#ML-3467</span>
                       </div>
                     </div>
                   </div>
-                  <div class="box-k-content">
+                  <div class="table_section--box_K">
                     <div class="box_k_timestamp">09:46</div>
                     <div class="box_k_dot">
                       <img src="images/Box_K/Greeen_Elipse.png" />
@@ -948,26 +804,26 @@
                       Payment was made of $64.95 to Michael Anderson
                     </div>
                   </div>
-                  <div class="box-k-content">
+                  <div class="table_section--box_K">
                     <div class="box_k_timestamp">09:46</div>
                     <div class="box_k_dot">
                       <img src="images/Box_K/Orange_Elipse.png" />
                     </div>
                     <div class="box-k-content-4-text">
-                      <div class="box_titles" style="font-size: 14px">
+                      <div class="bold_text">
                         New Sales Recorded
-                        <span style="color: #5d87ff">#ML-3467</span>
+                        <span class="bold_text--blue">#ML-3467</span>
                       </div>
                     </div>
                   </div>
-                  <div class="box-k-content">
+                  <div class="table_section--box_K">
                     <div class="box_k_timestamp">09:46</div>
                     <div class="box_k_dot">
                       <img src="images/Box_K/Red_Elipse.png" />
                     </div>
                     <div class="box_subtitles">Project meeting</div>
                   </div>
-                  <div class="box-k-content">
+                  <div class="table_section--box_K">
                     <div class="box_k_timestamp">09:46</div>
                     <div class="box_k_dot">
                       <img src="images/Box_K/Blue_elipse_2.png" />
@@ -976,20 +832,15 @@
                       Payment received from John Doe of $385.90
                     </div>
                   </div>
-                  <div class="box-k-content">
+                  <div class="table_section--box_K">
                     <div class="box_k_timestamp">09:46</div>
                     <div class="box_k_dot">
                       <img src="images/Box_K/Blue_elipse_3.png" />
                     </div>
                     <div class="box-k-content-7-text">
-                      <div class="box_titles" style="font-size: 14px">
+                      <div class="bold_text">
                         New Sales Recorded
-                        <span
-                          style="
-                            color: var(--light-theme-primary-primary, #5d87ff);
-                          "
-                          >#ML-3467</span
-                        >
+                        <span class="bold_text--blue">#ML-3467</span>
                       </div>
                     </div>
                   </div>
@@ -1001,6 +852,7 @@
       </div>
     </div>
     <script src="click_function.js"></script>
+    <script src="side_bar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="doughnut_chart.js"></script>
     <script src="line_chart_1.js"></script>

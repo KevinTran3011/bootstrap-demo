@@ -38,17 +38,21 @@ sectionItems.forEach((item) => {
 const gridSectionOnClick = (event) => {
   isSelected = false;
   const gridSection = event.currentTarget;
+  const textElement = gridSection.querySelector(".material-symbols-outlined");
+  const textElement2 = gridSection.querySelector(".box_grid_text_title");
   if (!isSelected) {
-    gridSection.classList.toggle("grid_onClick");
+    gridSection.classList.add("grid_onClick");
 
     // Toggle text color within the clicked element
-    const textElement = gridSection.querySelector(".material-symbols-outlined");
-    const textElement2 = gridSection.querySelector(".box_grid_text_title");
-    textElement.classList.toggle("text_onClick");
-    textElement2.classList.toggle("text_onClick");
+
+    textElement.classList.add("text_onClick");
+    textElement2.classList.add("text_onClick");
     isSelected = true;
   } else {
-    grid;
+    gridSection.classList.remove("grid_onClick");
+    textElement.classList.remove("text_onClick");
+    textElement2.classList.remove("text_onClick");
+    isSelected = false;
   }
 };
 
@@ -76,6 +80,7 @@ const toggleProfile = () => {
 
 const toggleUserDropdown = () => {
   var userDropdown = document.getElementById("userDropdown");
+
   if (userDropdown) {
     userDropdown.style.display =
       userDropdown.style.display === "block" ? "none" : "block";

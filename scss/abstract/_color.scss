@@ -1,7 +1,7 @@
 $primary-color: var(--light-theme-gray-md-new-grey, #5a6a85);
 $title-color: var(--light-theme-gray-dark-blue-grey, #2a3547);
-$white: var(--light-theme-gray-pure-white, #fff);
-$blue: var(--light-theme-primary-primary, #5d87ff);
+$textBox_color: var(--light-theme-gray-pure-white, #fff);
+$textBox_background: var(--light-theme-primary-primary, #5d87ff);
 $light-grey: var(--light-theme-gray-light-grey, #dfe5ef);
 $medium-grey: var(--light-theme-gray-medium-blue-grey, #7c8fac);
 $light-blue: var(--light-theme-action-light-light-info, #ebf3fe);
@@ -12,3 +12,5 @@ $light-red: var(--light-theme-action-light-light-error, #fbf2ef);
 $orange: var(--light-theme-action-warning, #ffae1f);
 $light-orange: var(--light-theme-action-light-light-warning, #fff8e6);
 $transparent-blue: var(--light-theme-primary-light-primary, #ecf2ff);
+$first_box: var(--Light-Theme-Action-Light-Light-Info, #ebf3fe);
+$hr_color: var(--light-theme-gray-lighter-grey, #eaeff4);

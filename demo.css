@@ -13,14 +13,14 @@
   margin-left: 50px;
 }
 
-.logo_image-left {
+.logo_image--left {
   position: absolute;
   top: 15px;
   left: 15px;
   z-index: 1;
 }
 
-.logo_image-right {
+.logo_image--right {
   position: absolute;
   top: 15px;
   left: 25px;
@@ -859,7 +859,10 @@ div.grid_onClick .box_grid_text_title.text_onClick {
 
 @media only screen and (orientation: portrait) {
   .side_bar {
-    display: none;
+    left: -250px;
+  }
+  .side_bar.open {
+    left: 0;
   }
 }
 @media screen and (max-width: 700px) {

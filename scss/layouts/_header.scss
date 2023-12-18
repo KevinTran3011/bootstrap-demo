@@ -1,8 +1,22 @@
-@use "../abstract/mixin" as *;
+@use "../abstract/mixin" as m;
 
 .box_header {
-  @include flex_start;
-  flex-direction: column;
+  @include m.flex_start;
+
   gap: 4px;
   flex: 1 0 0;
+
+  &--h {
+    @include m.flex_center;
+    gap: 16px;
+    align-self: flex-start;
+  }
+}
+
+.section_header {
+  padding: 15px;
+}
+
+#seperated_header {
+  padding-left: 0px;
 }

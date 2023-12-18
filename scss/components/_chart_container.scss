@@ -1,0 +1,37 @@
+@use "../abstract/mixin" as *;
+.chart_legend {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-left: 31px;
+}
+
+.chart_container {
+  &--bar {
+    @extend .chart_container;
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 8px;
+    height: 47px;
+    align-self: flex-end;
+  }
+  &--doughnut {
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+  }
+  &--line_2 {
+    height: 300px;
+    width: 300px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+}
